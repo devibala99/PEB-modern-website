@@ -1,0 +1,178 @@
+.about-container {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    color: white;
+}
+
+.img-shadow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-content {
+    width: 100%;
+}
+
+.text-wrapper {
+    margin-top: 5vh;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+}
+
+.text-wrapper h1 {
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.433);
+    font-size: 3rem;
+}
+
+.text-wrapper span {
+    color: #cd1e2d;
+    font-size: 1rem;
+    text-align: left;
+    font-weight: 500;
+}
+
+#bgVideo {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+/*about-content*/
+.about-content-para {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#id-content-para {
+    width: 100%;
+    background-image: url("../images/users-people-svgrepo-com.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section,
+.section-two {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sa-content {
+    width: 90%;
+}
+
+
+
+/*Timeline*/
+.timeline-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    flex-direction: column;
+    margin-bottom: 5rem;
+}
+
+/*cards*/
+.third-half {
+    width: 100%;
+    color: rgba(255, 255, 255, 0.433);
+    margin-bottom: 17rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text-fast {
+    text-align: center;
+}
+
+.cards-fast {
+    margin-top: 2rem;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.card {
+    width: 30%;
+    height: 250px;
+    position: relative;
+    border-top: 3px solid #cd1e2d;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: #fff;
+    color: #000;
+}
+
+.card img {
+    display: block;
+    object-fit: contain;
+    width: 100%;
+    height: 250px;
+    /* filter: brightness(50%); */
+}
+
+.card h3 {
+    color: #cd1e2d;
+    font-size: 1.4rem;
+    position: relative;
+    line-height: 0.9;
+    text-align: center;
+    opacity: 1;
+
+}
+
+.card p {
+    color: rgba(255, 255, 255, 0.433);
+}
+
+.card-text {
+    padding-top: 1.3rem;
+    line-height: 2;
+}
+
+.card-text p {
+    padding-top: 1rem;
+}
+
+#card-text1,
+#card-text2,
+#card-text3 {
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 90%;
+    padding: 1rem;
+    transform: scale(0);
+    transition: all .3s ease-in-out;
+    backdrop-filter: blur(10px) brightness(80%);
+}
+
+#card1:hover #card-text1,
+#card2:hover #card-text2,
+#card3:hover #card-text3 {
+    transform: scale(1);
+}
